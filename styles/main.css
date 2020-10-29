@@ -176,3 +176,27 @@ header.masthead .bg-circle-4 {
   margin-left: 30px;
   margin-right: 10px;
 }
+
+.page-description{
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+@keyframes flow {
+  0%, 100% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-flow-text{
+  animation: flow 7s ease-in-out infinite;
+  background: linear-gradient(-90deg, rgb(139, 22, 189) 33%, rgb(253, 29, 29) 65%, rgb(252, 142, 69) 100%);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 70px;
+}
