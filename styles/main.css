@@ -166,3 +166,13 @@ header.masthead .bg-circle-4 {
   transition: 0.3s;
   filter: grayscale(0%) saturate(120%);
 }
+
+.margin-spacer-vertical{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.radio-button{
+  margin-left: 30px;
+  margin-right: 10px;
+}
