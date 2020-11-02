@@ -65,20 +65,21 @@
             <div class="form-group text-center form-box">
                     <form>
                         <label for="phone">Nazwa firmy: </label>
-                        <input class="form-control" type="tel" id="name" name="name" required>
+                        <input class="form-control" type="tel" id="name" name="name" placeholder="Wpisz nazwę firmy" required>
                         <br>
                         <label for="phone">Numer telefonu: </label>
-                        <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}|[0-9]{9}" required>
+                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="Wpisz numer telefonu" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}|[0-9]{9}" required>
+                        <small id="phone1" class="form-text text-muted">W powyższym polu wpisujesz swój nr telefonu w formacie XXX-XXX-XXX</small>
                         <br>
                         <label for="t2">Adres email: </label>
-                        <input class="form-control" type="email" id="t2" name="email" required>
+                        <input class="form-control" type="email" id="t2" placeholder="Wpisz adres email" name="email" required>
                         <br>
                         <label for="n1">Rok założenia działalności: </label>
-                        <input class="form-control" type="number" required min="1000" max="2020" step="1" id="n1" name="employees"
+                        <input class="form-control" type="number" placeholder="Wpisz rok" required min="1000" max="2020" step="1" id="n1" name="employees"
                                pattern="\d+">
                         <br>
                         <label for="t1">Region działalności: </label>
-                        <input class="form-control" type="text" required id="t1" name="continent" list="l1" required
+                        <input class="form-control" type="text" required id="t1"  placeholder="Wybierz region" name="continent" list="l1" required
                                pattern="[Ee]uropa|[Aa]meryka [Pp]ółnocna|[Aa]meryka [Pp]ołudniowa|[Aa]ustralia|[Aa]zja|[Aa]fryka">
                         <datalist id="l1">
                             <option>Europa</option>
@@ -88,7 +89,13 @@
                             <option>Azja</option>
                             <option>Afryka</option>
                         </datalist>
+                        <div class="input-group margin-spacer-vertical">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Twoja wiadomość</span>
+                            </div>
+                            <textarea class="form-control" aria-label="Twoja wiadomość"></textarea>
                         <br>
+                        </div>
                         <legend>Preferowane godziny kontaktu</legend>
                         <input type="radio" required name="contact-hours" id="r1" value="m" class="radio-button"><label for="r1">8-12</label>
                         <input type="radio"  name="contact-hours" id="r2" value="a" class="radio-button"><label for="r2">12-16</label>
