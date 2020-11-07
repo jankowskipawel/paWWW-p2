@@ -63,6 +63,11 @@
         <div class="row align-items-center d-flex justify-content-center">
             <p class="text-center margin-spacer-vertical page-description">Wpełnij ten prosty i krótki formularz, a nasz konsultant skontaktuje się z tobą jak najszybciej, aby dopasować ofertę bezpośrednio do ciebie.</p>
             <div class="form-group text-center form-box">
+                <div class="alert alert-danger mb-5" role="alert">
+                    UWAGA! W związku z obecną sytuacją pandemiczną nasi konsultanci
+                    <br>
+                    mogą być niedostępni w wybranych godzinach.
+                </div>
                     <form>
                         <label for="phone">Nazwa firmy: </label>
                         <input class="form-control" type="tel" id="name" name="name" placeholder="Wpisz nazwę firmy" required>
@@ -96,6 +101,13 @@
                             <textarea class="form-control" aria-label="Twoja wiadomość"></textarea>
                         <br>
                         </div>
+                        <div class="alert alert-warning mb-5" role="alert">
+                            W przypadku niedostępności konsultantów
+                            <br>
+                            w wybranych godzinach zostanie wysłany mail
+                            <br>
+                            informujący o zmianie godzin kontaktu.
+                        </div>
                         <legend>Preferowane godziny kontaktu</legend>
                         <input type="radio" required name="contact-hours" id="r1" value="m" class="radio-button"><label for="r1">8-12</label>
                         <input type="radio"  name="contact-hours" id="r2" value="a" class="radio-button"><label for="r2">12-16</label>
@@ -108,7 +120,7 @@
     </div>
 </section>
 
-<footer class="py-5 bg-black">
+<footer class="py-3 bg-black">
     <div class="container">
         <p class="m-0 text-center text-white small">Copyright &copy; Infinity® 2020</p>
     </div>
